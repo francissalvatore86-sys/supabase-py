@@ -84,7 +84,7 @@ class AsyncStorageClient(AsyncStorageBucketAPI):
 
     def vectors(self) -> AsyncStorageVectorsClient:
         return AsyncStorageVectorsClient(
-            url=self._base_url.joinpath("v1", "vector"),
+            url=self._base_url.joinpath("vector"),
             headers=self._headers,
             session=self.session,
         )
