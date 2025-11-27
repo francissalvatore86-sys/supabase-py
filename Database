@@ -1,0 +1,5 @@
+CREATE DATABASE myDB;
+CREATE TABLE users(
+  user_id SERIAL PRINARY KEY,
+  name VARCHAR(50),
+  age INT
